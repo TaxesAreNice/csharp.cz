@@ -1,8 +1,50 @@
-﻿Console.WriteLine("Ako sa voláš?");
-string? meno = Console.ReadLine();
-Console.WriteLine("Ahoj, " + meno);
+﻿
+Console.WriteLine("Calculation time!");
 
-Console.WriteLine("Koľko máš rokov?");
-string vstup = Console.ReadLine() ?? "0";
-int vek = int.Parse(vstup);
-Console.WriteLine("Máš " + vek + " rokov.");
+
+Console.WriteLine("Select the first number");
+if (number1 == "no")
+    Console.WriteLine("You dont have a choise... also, i picked 1 for you");
+string? number1 = Console.ReadLine();
+
+
+
+Console.WriteLine("Now, select the second number");
+string? number2 = Console.ReadLine();
+
+Console.WriteLine("+, -, *, / ?");
+string? sucetselection = Console.ReadLine();
+
+
+
+//skus swich
+
+if (sucetselection == "+")
+
+{
+    int sucet = int.Parse(number1) + int.Parse(number2);
+
+    Console.WriteLine($"It's " + sucet);
+}
+else if (sucetselection == "-")
+
+{
+    int sucet = int.Parse(number1) - int.Parse(number2);
+
+    Console.WriteLine($"It's " + sucet);
+}
+else if (sucetselection == "*")
+
+{
+    int sucet = int.Parse(number1) * int.Parse(number2);
+
+    Console.WriteLine($"It's " + sucet);
+}
+else if (sucetselection == "/")
+
+{
+    int sucet = int.Parse(number1) / int.Parse(number2);
+
+    Console.WriteLine($"It's " + sucet);
+}
+
