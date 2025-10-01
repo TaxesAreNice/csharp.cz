@@ -1,13 +1,26 @@
 ﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Console.WriteLine("Calculation time!");
 
 
 Console.WriteLine("Select the first number");
-if (number1 == "no")
-    Console.WriteLine("You dont have a choise... also, i picked 1 for you");
 string? number1 = Console.ReadLine();
-
-
 
 Console.WriteLine("Now, select the second number");
 string? number2 = Console.ReadLine();
