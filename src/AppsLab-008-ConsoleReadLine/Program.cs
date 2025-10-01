@@ -1,32 +1,21 @@
 ﻿
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Console.WriteLine("Calculation time!");
 
 
 Console.WriteLine("Select the first number");
-string? number1 = Console.ReadLine();
+string? number1Text = Console.ReadLine();
+decimal number1 = decimal.Parse(number1Text);
+
+Console.WriteLine("Select: +, -, *, / ?");
+string? sucetselection = Console.ReadLine();
 
 Console.WriteLine("Now, select the second number");
-string? number2 = Console.ReadLine();
+string? number2Text = Console.ReadLine();
+decimal number2 = decimal.Parse(number2Text);
 
-Console.WriteLine("+, -, *, / ?");
-string? sucetselection = Console.ReadLine();
+
 
 
 
@@ -35,28 +24,28 @@ string? sucetselection = Console.ReadLine();
 if (sucetselection == "+")
 
 {
-    int sucet = int.Parse(number1) + int.Parse(number2);
+    decimal sucet = number1 + number2;
 
     Console.WriteLine($"It's " + sucet);
 }
 else if (sucetselection == "-")
 
 {
-    int sucet = int.Parse(number1) - int.Parse(number2);
+    decimal sucet = number1 - number2;
 
     Console.WriteLine($"It's " + sucet);
 }
 else if (sucetselection == "*")
 
 {
-    int sucet = int.Parse(number1) * int.Parse(number2);
+    decimal sucet = number1 * number2;
 
     Console.WriteLine($"It's " + sucet);
 }
 else if (sucetselection == "/")
 
 {
-    int sucet = int.Parse(number1) / int.Parse(number2);
+    decimal sucet = number1 / (decimal)number2;
 
     Console.WriteLine($"It's " + sucet);
 }

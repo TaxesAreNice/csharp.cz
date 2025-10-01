@@ -4,18 +4,21 @@ Console.WriteLine("Type a number (6-1)");
 string? numberReader = Console.ReadLine();
 int number = int.Parse(numberReader);
 
-if (number >= 1 && number <= 6)
+if (number >= 1 && number <= 5)
 {
     Console.WriteLine("You've won!");
 }
+else if (number == 6)
+{
+    Console.WriteLine("You're going again");
+}
 else
 { 
-Console.WriteLine("Give me that cube!");
+Console.WriteLine("Give me that cube! YAY");
 }
 
 
-
-
+//int number = int.Parse(numberReader); is the convertor from a string to a number.
 
 
 
