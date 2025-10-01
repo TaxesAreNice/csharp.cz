@@ -1,12 +1,34 @@
-﻿bool a = true;
-int b = 5;
-int c = 4;
-bool d;
-int e = 5;
+﻿
 
-bool vysledok = ((c <= b) || !a) && (a == (e == b));
+Console.WriteLine("WoWoWO");
+string? fofo = Console.ReadLine();
+if (fofo == "5")
+{
+    Console.WriteLine("YaY");
+}
+else if (fofo == "6")
+{
+    Console.WriteLine("Nein!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+}
+else
+{
+    Console.WriteLine("Was?");
+}
 
-int s = 5;
+
+
+
+
+
+//bool a = true;
+//int b = 5;
+//int c = 4;
+//bool d;
+//int e = 5;
+
+//bool vysledok = ((c <= b) || !a) && (a == (e == b));
+
+//int s = 5;
 
 
 
