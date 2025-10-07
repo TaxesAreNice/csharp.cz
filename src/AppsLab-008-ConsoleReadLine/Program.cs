@@ -56,5 +56,8 @@ else if (sucetselection == "%")
 
     Console.WriteLine($"It's " + sucet);
 }
-
+else
+    {
+    Console.WriteLine("Error");
+}
 
