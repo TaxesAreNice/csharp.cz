@@ -8,7 +8,7 @@ Console.WriteLine("Select the first number");
 string? number1Text = Console.ReadLine();
 decimal number1 = decimal.Parse(number1Text);
 
-Console.WriteLine("Select: +, -, *, / ?");
+Console.WriteLine("Select: +, -, *, /, % ?");
 string? sucetselection = Console.ReadLine();
 
 Console.WriteLine("Now, select the second number");
@@ -49,4 +49,12 @@ else if (sucetselection == "/")
 
     Console.WriteLine($"It's " + sucet);
 }
+else if (sucetselection == "%")
+
+{
+    decimal sucet = number1 % (decimal)number2;
+
+    Console.WriteLine($"It's " + sucet);
+}
+
 
