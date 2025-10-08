@@ -1,7 +1,11 @@
-﻿Console.WriteLine("chose,buddy");
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+Console.WriteLine("chose,buddy");
 int stage = int.Parse(Console.ReadLine());
 if (stage == 1)
 {
+    Console.WriteLine("Switch calculator");
+    Console.WriteLine("----------");
 
     Console.WriteLine("Calculation time!");
 
@@ -53,6 +57,9 @@ if (stage == 1)
 }
 else if (stage == 2)
 {
+    Console.WriteLine("n2t");
+    Console.WriteLine("----------");
+
     Console.WriteLine("Number to text time!");
 
     decimal number = int.Parse(Console.ReadLine());
@@ -68,8 +75,85 @@ else if (stage == 2)
     };
     Console.WriteLine(numberDescription);
 }
+else if (stage == 3)
+{
+    Console.WriteLine("Original If Calculator");
+    Console.WriteLine("----------");
+
+    Console.WriteLine("Calculation time!");
+
+    Console.WriteLine("Select the first number");
+    string? number1Text = Console.ReadLine();
+    decimal number1 = decimal.Parse(number1Text);
+
+    Console.WriteLine("Select: +, -, *, / ?");
+    string? sucetselection = Console.ReadLine();
+
+    Console.WriteLine("Now, select the second number");
+    string? number2Text = Console.ReadLine();
+    decimal number2 = decimal.Parse(number2Text);
+    //skus swich
+
+    if (sucetselection == "+")
+
+    {
+        decimal sucet = number1 + number2;
+
+        Console.WriteLine($"It's " + sucet);
+    }
+    else if (sucetselection == "-")
+
+    {
+        decimal sucet = number1 - number2;
+
+        Console.WriteLine($"It's " + sucet);
+    }
+    else if (sucetselection == "*")
+
+    {
+        decimal sucet = number1 * number2;
+
+        Console.WriteLine($"It's " + sucet);
+    }
+    else if (sucetselection == "/")
+
+    {
+        decimal sucet = number1 / (decimal)number2;
+
+        Console.WriteLine($"It's " + sucet);
+    }
+}
+else if (stage == 4)
+{
+    Console.WriteLine("short calculator");
+    Console.WriteLine("----------");
+
+    Console.WriteLine("Calculation time!");
 
 
+    Console.WriteLine("Select the first number");
+    decimal number1 = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Select: +, -, *, /, % ?");
+    string? sucitselection = Console.ReadLine();
+
+    Console.WriteLine("Now, select the second number");
+    decimal number2 = decimal.Parse(Console.ReadLine());
+
+    decimal vysledok = 0;
+
+    string CalculatorDescription = sucitselection switch
+    {
+
+    };
+
+
+
+
+
+}
+else
+    Console.WriteLine("not included");
 
 
 
