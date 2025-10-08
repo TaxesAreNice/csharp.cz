@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamble!", "Gamble!\Gamble!.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kkk", "kkk\kkk.csproj", "{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "idkkkkkkkkkkk", "idkkkkkkkkkkk\idkkkkkkkkkkk.csproj", "{6AF6A223-1558-4EDC-885B-3C4C92791705}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -675,6 +677,18 @@ Global
 		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Release|x64.Build.0 = Release|Any CPU
 		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Release|x86.ActiveCfg = Release|Any CPU
 		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Release|x86.Build.0 = Release|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Debug|x64.Build.0 = Debug|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Debug|x86.Build.0 = Debug|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Release|x64.ActiveCfg = Release|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Release|x64.Build.0 = Release|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Release|x86.ActiveCfg = Release|Any CPU
+		{6AF6A223-1558-4EDC-885B-3C4C92791705}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
