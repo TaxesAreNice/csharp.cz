@@ -1,63 +1,77 @@
-﻿
-
-
-Console.WriteLine("Calculation time!");
-
-
-Console.WriteLine("Select the first number");
-string? number1Text = Console.ReadLine();
-decimal number1 = decimal.Parse(number1Text);
-
-Console.WriteLine("Select: +, -, *, /, % ?");
-string? sucetselection = Console.ReadLine();
-
-Console.WriteLine("Now, select the second number");
-string? number2Text = Console.ReadLine();
-decimal number2 = decimal.Parse(number2Text);
-
-
-
-
-
-//skus swich
-
-if (sucetselection == "+")
-
+﻿Console.WriteLine("chose,buddy");
+int stage = int.Parse(Console.ReadLine());
+if (stage == 1)
 {
-    decimal sucet = number1 + number2;
 
-    Console.WriteLine($"It's " + sucet);
-}
-else if (sucetselection == "-")
+    Console.WriteLine("Calculation time!");
 
-{
-    decimal sucet = number1 - number2;
 
-    Console.WriteLine($"It's " + sucet);
-}
-else if (sucetselection == "*")
+    Console.WriteLine("Select the first number");
+    decimal number1 = int.Parse(Console.ReadLine());
 
-{
-    decimal sucet = number1 * number2;
+    Console.WriteLine("Select: +, -, *, /, % ?");
+    string? sucetselection = Console.ReadLine();
 
-    Console.WriteLine($"It's " + sucet);
-}
-else if (sucetselection == "/")
+    Console.WriteLine("Now, select the second number");
+    decimal number2 = decimal.Parse(Console.ReadLine());
 
-{
-    decimal sucet = number1 / (decimal)number2;
+    decimal vysledok = 0;
 
-    Console.WriteLine($"It's " + sucet);
-}
-else if (sucetselection == "%")
-
-{
-    decimal sucet = number1 % (decimal)number2;
-
-    Console.WriteLine($"It's " + sucet);
-}
-else
+    switch (sucetselection)
     {
-    Console.WriteLine("Error");
+        case "+":
+            vysledok = number1 + number2;
+            break;
+
+        case "-":
+            vysledok = number1 - number2;
+            break;
+
+        case "*":
+            vysledok = number1 * number2;
+            break;
+
+        case "/":
+            if (number2 == 0)
+            {
+                Console.WriteLine("error");
+                break;
+            }
+            vysledok = number1 / number2;
+            break;
+
+        case "%":
+            vysledok = number1 % number2;
+            break;
+
+        default:
+            Console.WriteLine("Operacion is unknowed");
+            break;
+    }
+    Console.WriteLine($"It's " + vysledok);
+
 }
+else if (stage == 2)
+{
+    Console.WriteLine("Number to text time!");
+
+    decimal number = int.Parse(Console.ReadLine());
+
+    string numberDescription = number switch
+    {
+        1 => "one",
+        2 => "two",
+        3 => "three",
+        4 => "four",
+        _ => "NEIN!!!"
+
+    };
+    Console.WriteLine(numberDescription);
+}
+
+
+
+
+
+
 
