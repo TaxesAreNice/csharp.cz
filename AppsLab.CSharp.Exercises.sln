@@ -99,6 +99,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsolGame", "ConsolGame\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamble!", "Gamble!\Gamble!.csproj", "{B12A4993-6FCB-4A4B-870D-18E0DE696F04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kkk", "kkk\kkk.csproj", "{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -661,6 +663,18 @@ Global
 		{B12A4993-6FCB-4A4B-870D-18E0DE696F04}.Release|x64.Build.0 = Release|Any CPU
 		{B12A4993-6FCB-4A4B-870D-18E0DE696F04}.Release|x86.ActiveCfg = Release|Any CPU
 		{B12A4993-6FCB-4A4B-870D-18E0DE696F04}.Release|x86.Build.0 = Release|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Debug|x64.Build.0 = Debug|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Debug|x86.Build.0 = Debug|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Release|x64.ActiveCfg = Release|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Release|x64.Build.0 = Release|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Release|x86.ActiveCfg = Release|Any CPU
+		{EE0984C9-4E53-4049-AF4C-1FEF317B95D8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
