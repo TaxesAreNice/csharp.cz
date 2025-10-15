@@ -4,56 +4,66 @@ Console.WriteLine("chose,buddy");
 int stage = int.Parse(Console.ReadLine());
 if (stage == 1)
 {
-    Console.WriteLine("Switch calculator");
-    Console.WriteLine("----------");
 
-    Console.WriteLine("Calculation time!");
+        Console.WriteLine("Switch calculator");
+    int i = 0;
 
-
-    Console.WriteLine("Select the first number");
-    decimal number1 = int.Parse(Console.ReadLine());
-
-    Console.WriteLine("Select: +, -, *, /, % ?");
-    string? sucetselection = Console.ReadLine();
-
-    Console.WriteLine("Now, select the second number");
-    decimal number2 = decimal.Parse(Console.ReadLine());
-
-    decimal vysledok = 0;
-
-    switch (sucetselection)
+    while (i < 1)
     {
-        case "+":
-            vysledok = number1 + number2;
-            break;
+        Console.WriteLine("----------");
 
-        case "-":
-            vysledok = number1 - number2;
-            break;
+        Console.WriteLine("Calculation time!");
 
-        case "*":
-            vysledok = number1 * number2;
-            break;
 
-        case "/":
-            if (number2 == 0)
-            {
-                Console.WriteLine("error");
+        Console.WriteLine("Select the first number");
+        decimal number1 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Select: +, -, *, /, % ?");
+        string? sucetselection = Console.ReadLine();
+
+        Console.WriteLine("Now, select the second number");
+        decimal number2 = decimal.Parse(Console.ReadLine());
+
+        decimal vysledok = 0;
+
+        switch (sucetselection)
+        {
+            case "+":
+                vysledok = number1 + number2;
                 break;
-            }
-            vysledok = number1 / number2;
-            break;
 
-        case "%":
-            vysledok = number1 % number2;
-            break;
+            case "-":
+                vysledok = number1 - number2;
+                break;
 
-        default:
-            Console.WriteLine("Operacion is unknowed");
-            break;
+            case "*":
+                vysledok = number1 * number2;
+                break;
+
+            case "/":
+                if (number2 == 0)
+                {
+                    Console.WriteLine("error");
+                    break;
+                }
+                vysledok = number1 / number2;
+                break;
+
+            case "%":
+                vysledok = number1 % number2;
+                break;
+
+            default:
+                Console.WriteLine("Operacion is unknowed");
+                break;
+        }
+        Console.WriteLine($"It's " + vysledok);
+
+        Console.WriteLine("do you wanna continue?");
+        string end = Console.ReadLine();
+        if (end == "n")
+            i = 1;
     }
-    Console.WriteLine($"It's " + vysledok);
-
 }
 else if (stage == 2)
 {
