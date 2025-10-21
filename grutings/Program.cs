@@ -1,4 +1,6 @@
-﻿string name = GetMyName();
+﻿
+
+string name = GetMyName();
 string age = GetMyAge();
 
 PrintStuff(name, age);
