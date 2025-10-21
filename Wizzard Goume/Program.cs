@@ -205,4 +205,4 @@ while (round < 100000)
     round++;
 }
 
-//  Praca Mareka Mahúta a Michala Cvengroša
+// Praca Mareka Mahúta a Michala Cvengroša
