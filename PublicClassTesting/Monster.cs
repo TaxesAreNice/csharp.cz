@@ -1,14 +1,20 @@
-﻿namespace PublicClassTesting
+﻿using System;
+using System.Text;
+
+namespace PublicClassTesting
 {
     public class Monster
     {
-        private const int maxHP = 200;
+        public bool PlayerIsDead = false;
+        public int OriginalHP = 200;
+        public int BackappHP = 200;
         private const int minHP = 0;
 
-        private int currentHP = maxHP;
+        public int currentHP = 200;
 
 
-        private int MonsterDamage = 1;
+        public decimal MonsterDamage = 5;
+        public decimal BackappDamage = 5;
 
         internal void TakeDamage(int damage)
         {
@@ -20,5 +26,28 @@
             return true;
 
         }
+        internal void TheMonsterAcionPart(Player player)
+        { 
+            DealDamage(player);
+            if (player.currentHP <= 0)
+            {
+                Console.WriteLine("The enemy hit you so hard, that you just freaking died");
+                PlayerIsDead = true;
+            }
+            else
+            {
+                Console.WriteLine($"The enemy hit you\nYour HP: {player.currentHP}");
+            }
+        }
+        internal void StrongerMonster()
+        {
+
+            currentHP = (int)(currentHP * 1.05); // 5% more
+            BackappHP = currentHP;
+
+            MonsterDamage = (decimal)(MonsterDamage * 1.05m); // 5% more
+            BackappDamage = (decimal)MonsterDamage;
+        }
     }
 }
+
