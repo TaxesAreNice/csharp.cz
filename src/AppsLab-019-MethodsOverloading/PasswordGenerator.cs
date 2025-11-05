@@ -1,3 +1,5 @@
+using System.Threading.Channels;
+
 namespace AppsLab_019_MethodsOverloading
 {
     /// <summary>
@@ -53,3 +55,6 @@ namespace AppsLab_019_MethodsOverloading
         }
     }
 }
+
+
+// napis "cw" a potom tab a mas insta Console.WriteLine();
