@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using SomeKindOfQuestionsOrSomething;
+
+Questions question1 = new();
+question1.QuestionPrompt();
+
+Questions question2 = new();
+//atd.
