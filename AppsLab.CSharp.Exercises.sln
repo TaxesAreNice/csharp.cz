@@ -121,13 +121,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stuff", "Stuff", "{8899E3FF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Text to Font", "Text to Font\Text to Font.csproj", "{F8E65EA4-21D1-4C55-92C1-BF4246F7DDDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicClassTesting", "PublicClassTesting\PublicClassTesting.csproj", "{DB343790-174E-40BB-98B1-18C653F575B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicClassTesting", "PublicClassTesting\PublicClassTesting.csproj", "{DB343790-174E-40BB-98B1-18C653F575B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wuzardino", "Wuzardino\Wuzardino.csproj", "{59F3D3EA-4D11-4693-9135-B5A994CE3E04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wuzardino", "Wuzardino\Wuzardino.csproj", "{59F3D3EA-4D11-4693-9135-B5A994CE3E04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fafafela", "Fafafela\Fafafela.csproj", "{2176BC20-FC57-4B5F-9E54-64B6B7E0D14C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fafafela", "Fafafela\Fafafela.csproj", "{2176BC20-FC57-4B5F-9E54-64B6B7E0D14C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fodbaaaaaaaaaaaaaaaaaaaaaaaaaaaaalinooooooooooooooo", "Fodbaaaaaaaaaaaaaaaaaaaaaaaaaaaaalinooooooooooooooo\Fodbaaaaaaaaaaaaaaaaaaaaaaaaaaaaalinooooooooooooooo.csproj", "{2F992CD2-C364-4C81-BC3C-B819B99E6CEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fodbaaaaaaaaaaaaaaaaaaaaaaaaaaaaalinooooooooooooooo", "Fodbaaaaaaaaaaaaaaaaaaaaaaaaaaaaalinooooooooooooooo\Fodbaaaaaaaaaaaaaaaaaaaaaaaaaaaaalinooooooooooooooo.csproj", "{2F992CD2-C364-4C81-BC3C-B819B99E6CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithFiles", "WorkWithFiles\WorkWithFiles.csproj", "{E7FCAE1D-4832-4AAB-8633-007AFA52D660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -859,6 +861,18 @@ Global
 		{2F992CD2-C364-4C81-BC3C-B819B99E6CEC}.Release|x64.Build.0 = Release|Any CPU
 		{2F992CD2-C364-4C81-BC3C-B819B99E6CEC}.Release|x86.ActiveCfg = Release|Any CPU
 		{2F992CD2-C364-4C81-BC3C-B819B99E6CEC}.Release|x86.Build.0 = Release|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Debug|x64.Build.0 = Debug|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Debug|x86.Build.0 = Debug|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Release|x64.ActiveCfg = Release|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Release|x64.Build.0 = Release|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Release|x86.ActiveCfg = Release|Any CPU
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -924,6 +938,7 @@ Global
 		{59F3D3EA-4D11-4693-9135-B5A994CE3E04} = {8899E3FF-673C-4819-ACF9-28C65B2E2D52}
 		{2176BC20-FC57-4B5F-9E54-64B6B7E0D14C} = {8899E3FF-673C-4819-ACF9-28C65B2E2D52}
 		{2F992CD2-C364-4C81-BC3C-B819B99E6CEC} = {8899E3FF-673C-4819-ACF9-28C65B2E2D52}
+		{E7FCAE1D-4832-4AAB-8633-007AFA52D660} = {8899E3FF-673C-4819-ACF9-28C65B2E2D52}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BE04033-84E1-4A20-98B0-52043D7FFE41}
