@@ -14,10 +14,6 @@ namespace SomeKindOfQuestionsOrSomething
 
         public string correctAnwcer = "";
 
-        
-       
-        //public string UserInputColector = "";
-
         private List<string> UserInputColector = new List<string> {};
         public List<string> questionSaver = new List<string> { };
         public List<string> answerASaver = new List<string> { };
@@ -25,9 +21,7 @@ namespace SomeKindOfQuestionsOrSomething
         public void QuestionPicker()
         {
             Console.WriteLine("\nPick between a,b,c");
-            // just put this cw in a loop with its number of the guestion or something
             string? userInput = Console.ReadLine();
-            // and the same here but with the input
             if (userInput == "a")
             {
                 correctAnwcer = "a";

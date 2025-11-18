@@ -11,11 +11,7 @@ questionSystem.FileThingIg();
 File.AppendAllText(questionSystem.fileName, questionSystem.DaWholeText);
 
 
-//Questions question1 = new();
 
-
-//Questions question2 = new();
-//atd.
 
 
 

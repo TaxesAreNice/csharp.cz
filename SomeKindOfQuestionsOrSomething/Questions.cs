@@ -12,9 +12,8 @@ namespace SomeKindOfQuestionsOrSomething
 
     internal class Questions
     {
-        QuestionSystem questionSystem = new QuestionSystem();
 
-        private List<string> questionsFF = new List<string> { "bla bla bla, it's a", "bla bla bla, it's c", "bla,bla,bla, it's b" };
+        private List<string> questionsFF = new List<string> { "What's the color of a banana?\nyellow(a)\nblue(b)\npurple(c)\n", "How is Germany called in german?\nGermany(a)\nNemaria(b)\nDeutschland(c)", "What is the capital city of Englang?\nParis(a)\nLondon(b)\nKroasant(c)" };
         private List<string> questionsFT = new List<string> { "a", "c", "b" };
 
         public List<string> GuetionsColector = new List<string>();
@@ -30,7 +29,6 @@ namespace SomeKindOfQuestionsOrSomething
             while (i < questionsFF.Count)
             {
                 Console.WriteLine(questionsFF[i]);
-                //questionSystem.questionSaver = questionSystem.questionSaver + "\n" + questionsFF[i];
                 questionSystem.questionSaver.Add(questionsFF[i]);
                 questionSystem.QuestionPicker();
 
