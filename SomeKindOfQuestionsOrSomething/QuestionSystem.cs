@@ -8,53 +8,67 @@ namespace SomeKindOfQuestionsOrSomething
 {
     internal class QuestionSystem
     {
-        private bool a = false;
-        private bool b = false;
-        private bool c = false;
-        private bool jh = false;
+   
+        public string fileName = "C:\\Users\\MexNan\\Desktop\\Otayky.OOP\\txt.txt";
+        public string DaWholeText = "";
 
+        public string correctAnwcer = "";
 
+        
+       
+        //public string UserInputColector = "";
 
+        private List<string> UserInputColector = new List<string> {};
+        public List<string> questionSaver = new List<string> { };
+        public List<string> answerASaver = new List<string> { };
 
-        public string AbcPickerSystem()
+        public void QuestionPicker()
         {
-            string? odpoved = Console.ReadLine();
-
-            if (odpoved == "a")
+            Console.WriteLine("\nPick between a,b,c");
+            // just put this cw in a loop with its number of the guestion or something
+            string? userInput = Console.ReadLine();
+            // and the same here but with the input
+            if (userInput == "a")
             {
-                a = true;
-                Console.WriteLine("You picked a");
+                correctAnwcer = "a";
             }
-            else if (odpoved == "b") 
-            { 
-                b = true;
-                Console.WriteLine("You picked b");
-            }
-            else if (odpoved == "c") 
+            if (userInput == "b")
             {
-                c = true;
-                Console.WriteLine("You picked c");
+                correctAnwcer = "b";
             }
-            else 
+            if (userInput == "c")
             {
-                jh = true;
-                Console.WriteLine("wrong");
-
+                correctAnwcer = "c";
             }
+            else if (userInput != "a" && userInput != "b" && userInput != "c")
+            {
+                Console.WriteLine("Taking that as d...");
+            }
+            UserInputColector.Add(userInput);
 
-            return odpoved;
+            userInput = "";
+
         }
 
 
+        public void FileThingIg()
+        {
+            int loop = 0;
+            string firstText = "---------------------------------\nWelcome to this very intresing quiz!\n";
 
-
-
-
-
-
-
-
-
-
+            while (loop < questionSaver.Count)
+            {
+                if (loop >= 1)
+               {
+                    DaWholeText = DaWholeText +  "\n" + questionSaver[loop] + "\n" + UserInputColector[loop] + "\n" + answerASaver[loop];
+                    loop++;
+                }
+               else
+                {
+                    DaWholeText = firstText + questionSaver[loop] + "\n" + UserInputColector[loop] + "\n" + answerASaver[loop] + "\n";
+                    loop++;
+                }
+            }
+        }
     }
 }
