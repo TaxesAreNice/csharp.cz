@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Guesser_2._0
+{
+    internal class Randomizer
+    {
+        private int MaxNumber;
+        private Random Rnd;
+
+        public Randomizer(int maxNumber)
+        {
+            Rnd = new Random();
+        }
+
+
+        public int Random()
+        { 
+            Random rnd = new Random();
+            int nextNumber = rnd.Next(MaxNumber);
+
+            return nextNumber;
+        }
+    }
+}
