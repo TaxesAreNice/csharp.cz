@@ -14,6 +14,7 @@ namespace Guesser_2._0
         public Randomizer(int maxNumber)
         {
             Rnd = new Random();
+            MaxNumber = maxNumber;
         }
 
 

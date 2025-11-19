@@ -9,15 +9,12 @@ namespace Guesser_2._0
     internal class FileProvider
     {
 
-        public int LoadNumber(string filename)
+        public int LoadMaxNumber(string filename)
         {
             string fileContent = File.ReadAllText(filename);
             int maxNumber = Convert.ToInt32(fileContent);
 
             return maxNumber;
         }
-
-
-
     }
 }

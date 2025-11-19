@@ -12,11 +12,11 @@ namespace Guesser_2._0
 
         public void Do(int randomNumber)
         {
-            Console.WriteLine("The number");
+            Console.WriteLine("The number:");
             string? userInput = Console.ReadLine();
             int guess = Convert.ToInt32(userInput);
 
-            while (guess == randomNumber) 
+            while (guess != randomNumber) 
             {
                 if (guess > randomNumber)
                 {
@@ -26,8 +26,9 @@ namespace Guesser_2._0
                 {
                     Console.WriteLine("Try bigger");
                 }
+                userInput = Console.ReadLine();
+                guess = Convert.ToInt32(userInput);
             }
-            Console.WriteLine("You won....");
         }
     }
 }
