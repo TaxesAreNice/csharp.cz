@@ -12,9 +12,20 @@ namespace Guesser_2._0
 
         public void Do(int randomNumber)
         {
+            string userInput;
+            int guess = 0;
             Console.WriteLine("The number:");
-            string? userInput = Console.ReadLine();
-            int guess = Convert.ToInt32(userInput);
+
+            try 
+            {
+                 userInput = Console.ReadLine();
+                 guess = Convert.ToInt32(userInput);
+            }
+           catch
+            {
+                Console.WriteLine("a number");
+            }
+           
 
             while (guess != randomNumber) 
             {
